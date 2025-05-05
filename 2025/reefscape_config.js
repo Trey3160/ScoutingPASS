@@ -76,44 +76,28 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Coral L1",
+    { "name": "Amp Score",
       "code": "tc1",
       "type": "counter"
     },
-    { "name": "Coral L2",
+    { "name": "Speaker Score",
       "code": "tc2",
       "type": "counter"
     },
-    { "name": "Coral L3",
+    { "name": "Speaker While Amplified",
       "code": "tc3",
-      "type": "counter"
-    },
-    { "name": "Coral L4",
-      "code": "tc4",
-      "type": "counter"
-    },
-    { "name": "Processor Score",
-      "code": "tps",
-      "type": "counter"
-    },
-    { "name": "Net Score",
-      "code": "tns",
       "type": "counter"
     },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Coral Station<br>",
+        "Hp": "Human Player Station",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    },
-    { "name": "Scored in<br>Opponent<br>Processor",
-      "code": "opp",
-      "type": "bool"
     }
   ],
   "endgame": [
@@ -121,10 +105,11 @@ var config_data = `
       "code": "efs",
       "type":"radio",
       "choices": {
-        "bp": "Parked<br>",
-        "ba": "Parked/Failed Climb<br>",
-        "bs": "Shallow Cage<br>",
-        "bd": "Deep Cage<br>",
+        "Pk": "Parked<br>",
+        "At": "Parked/Failed Climb<br>",
+        "So": "Solo Climb",
+        "Ha": "Harmany",
+        "Sp": "Spotlit",
         "x": "Not attempted"
       },
       "defaultValue": "x"
