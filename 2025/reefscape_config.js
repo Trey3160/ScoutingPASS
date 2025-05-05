@@ -61,29 +61,18 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Coral L1",
-      "code": "ac1",
+    { "name": "Speaker Score",
+      "code": "asp",
       "type": "counter"
     },
-    { "name": "Coral L2",
-      "code": "ac2",
+    { "name": "Amp Score",
+      "code": "aam",
       "type": "counter"
     },
-    { "name": "Coral L3",
-      "code": "ac3",
-      "type": "counter"
-    },
-    { "name": "Coral L4",
-      "code": "ac4",
-      "type": "counter"
-    },
-    { "name": "Processor Score",
-      "code": "aps",
-      "type": "counter"
-    },
-    { "name": "Net Score",
-      "code": "ans",
-      "type": "counter"
+   
+    { "name": "Grabed from middle",
+      "code": "agm",
+      "type": "bool"
     }
   ],
   "teleop": [
