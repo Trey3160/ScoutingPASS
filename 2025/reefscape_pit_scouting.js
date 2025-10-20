@@ -52,7 +52,7 @@ var config_data = `
       "size": 20,
       "maxSize": 250
     },
-    {"name": "Apriltag Alignment?",
+    {"name": "Apriltag Alignment",
      "code": "tag",
      "type": "bool"
     },
