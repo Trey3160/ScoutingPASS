@@ -12,7 +12,12 @@ var config_data = `
     { "name": "Width",
       "code": "wid",
       "type": "number",
-      "defaultValue": "0"
+      "defaultValue": "18"
+    },
+    { "name": "Length",
+      "code": "len",
+      "type": "number",
+      "defaultValue": "18"
     },
     { "name": "Drivetrain",
       "code": "drv",
@@ -41,11 +46,15 @@ var config_data = `
        "code": "fpu",
        "type": "bool"
     },
-    { "name": "Autos",
+    { "name": "# of Autos",
       "code": "aut",
       "type": "text",
       "size": 20,
       "maxSize": 250
+    },
+    {"name": "Apriltag Alignment?",
+     "code": "tag",
+     "type": "bool"
     },
     { "name": "Comments",
       "code": "co",
