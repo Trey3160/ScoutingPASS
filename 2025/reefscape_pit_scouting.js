@@ -43,7 +43,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Human Player Pickup Artifact",
-       "code": "fpu",
+       "code": "hpu",
        "type": "bool"
     },
     { "name": "# of Autos",
