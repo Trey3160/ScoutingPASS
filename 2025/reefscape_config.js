@@ -12,15 +12,7 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
-      "code": "evt",
-      "type": "radio",
-      "choices": {
-        "oc": "OKLAHOMA CITY",
-        "gc": "GREEN COUNTRY",
-      },
-      "defaultValue": "oc"
-    },
+    
     { "name": "Match Level",
       "code": "l",
       "type": "level",
