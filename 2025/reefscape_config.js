@@ -99,7 +99,7 @@ var config_data = `
       },
       "defaultValue": "f"
     },
-  ]
+  ],
   "endgame": [
     { "name": "Final Robot Status",
       "code": "efs",
