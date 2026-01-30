@@ -13,10 +13,13 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
-      "code": "e",
-      "type": "event",
-      "defaultValue": "2025ilpe",
-      "required": "true"
+      "code": "evt",
+      "type": "radio",
+      "choices": {
+        "oc": "OKLAHOMA CITY",
+        "gc": "GREEN COUNTRY",
+      },
+      "defaultValue": "oc"
     },
     { "name": "Match Level",
       "code": "l",
@@ -61,65 +64,55 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Speaker Score",
-      "code": "asp",
+    { "name": "Shoot Preload",
+      "code": "shp",
+      "type": "bool"
+    },
+    { "name": "Climbed Durring Auto",
+      "code": "wtm",
       "type": "counter"
     },
-    { "name": "Amp Score",
-      "code": "aam",
-      "type": "counter"
-    },
-   
     { "name": "Grabed from middle",
       "code": "agm",
       "type": "bool"
     }
   ],
   "teleop": [
-    { "name": "Amp Score",
-      "code": "tc1",
-      "type": "counter"
-    },
-    { "name": "Speaker Score",
-      "code": "tc2",
-      "type": "counter"
-    },
-    { "name": "Speaker While Amplified",
-      "code": "tc3",
-      "type": "counter"
-    },
-    { "name": "Pickup From",
-      "code": "tpu",
+    { "name": "Offensive Shift Strategy",
+      "code": "oss",
       "type": "radio",
       "choices": {
-        "Hp": "Human Player Station",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
+        "1": "Best Scorrer",
+        "2": "2nd Best Scorrer",
+        "3": "3rd Best Scorrer",
+        "0": "Defense"
       },
-      "defaultValue": "x"
-    }
-  ],
+      "defaultValue": "0"
+    },
+    { "name": "Defensive Shift Strategy",
+      "code": "dss",
+      "type": "radio",
+      "choices": {
+        "f": "Feeder",
+        "n": "Defense Nutural",
+        "z": "Defense Alliance Zone"
+      },
+      "defaultValue": "f"
+    },
+  ]
   "endgame": [
     { "name": "Final Robot Status",
       "code": "efs",
       "type":"radio",
       "choices": {
-        "Pk": "Parked<br>",
-        "At": "Parked/Failed Climb<br>",
-        "So": "Solo Climb",
-        "Ha": "Harmany",
-        "Sp": "Spotlit",
-        "x": "Not attempted"
+        "3": "L3",
+        "2": "L2",
+        "1": "L1",
       },
-      "defaultValue": "x"
+      "defaultValue": "1"
     }
   ],
   "postmatch": [
-    { "name": "Attained Coopertition Pt",
-      "code": "cop",
-      "type": "bool"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -132,18 +125,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
+    
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
