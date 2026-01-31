@@ -94,46 +94,41 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Shooting Locations",
-      "code": "tsl",
-      "type": "clickable_image",
-      "filename": "2026/half_field.png",
-      "dimensions": "7 10",
-      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
-      "expectedMax": 25,
-      "shape": "circle 5 black red true"
+    { "name": "Offensive Shift Strategy",
+      "code": "oss",
+      "type": "radio",
+      "choices": {
+        "1": "Best Scorrer",
+        "2": "2nd Best Scorrer",
+        "3": "3rd Best Scorrer",
+        "0": "Defense"
+      },
+      "defaultValue": "0"
     },
-    { "name": "Fuel Scored",
-      "code": "tfs",
-      "expectedMax": 150,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+    { "name": "Defensive Shift Strategy",
+      "code": "dss",
+      "type": "radio",
+      "choices": {
+        "f": "Feeder",
+        "n": "Defense Nutural",
+        "z": "Defense Alliance Zone"
+      },
+      "defaultValue": "f"
     },
-    { "name": "Pass from Neutral Zone",
-      "code": "pnz",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
-    { "name": "Pass from Opp Alliance Zone",
-      "code": "poa",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
-    { "name": "Pickup from Depot",
-      "code": "tfd",
+    { "name": "Under Trench",
+      "code": "ut",
       "type": "bool"
     },
-    { "name": "Pickup from Outpost",
-      "code": "tfo",
+    { "name": "Over Bump",
+      "code": "ob",
+      "type": "bool"
+    },
+    { "name": "Pickedup from Human Player",
+      "code": "pfh",
       "type": "bool"
     },
     { "name": "Pickup from Floor",
-      "code": "tff",
+      "code": "pff",
       "type": "bool"
     }
   ],
