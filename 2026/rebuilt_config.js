@@ -17,11 +17,7 @@ var config_data = `
     {
   "name": "Event",
   "code": "e",
-  "type": "radio",
-  "choices": {
-    "2026okth": "Tulsa<br>",
-    "2026okok": "Oklahoma City"
-  },
+  "type": "event",
   "defaultValue": "2026okth",
   "required": true
 },
