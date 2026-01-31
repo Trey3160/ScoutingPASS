@@ -12,10 +12,14 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
+    { "name": "event",
       "code": "e",
-      "type": "event",
-      "defaultValue": "2026ilch",
+      "type": "level",
+      "choices": {
+        "2026OKOK": "Oklahoma City<br>",
+        "2026OKTU": "Tulsa<br>",
+      },
+      "defaultValue": "2026OKOK",
       "required": "true"
     },
     { "name": "Match Level",
@@ -182,14 +186,6 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Crossed Bump",
-      "code": "bmp",
-      "type": "bool"
-    },
-    { "name": "Crossed Trench",
-      "code": "tre",
-      "type": "bool"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
@@ -206,17 +202,6 @@ var config_data = `
     { "name": "Was Defended",
       "code": "def",
       "type": "bool"
-    },
-    { "name": "Excessive Penalties",
-      "code": "pen",
-      "type": "bool"
-    },
-    { "name": "Fuel Percentage",
-      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
-      "code": "pct",
-      "type": "number",
-      "min": 0,
-      "max": 100
     },
     { "name": "Comments",
       "code": "co",
