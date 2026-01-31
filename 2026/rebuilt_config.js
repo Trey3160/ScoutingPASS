@@ -66,38 +66,23 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auto Shooting Location",
-      "code": "asl",
-      "type": "clickable_image",
-      "filename": "2026/half_field.png",
-      "dimensions": "7 10",
-      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
-      "expectedMax": 5,
-      "shape": "circle 5 black red true"
+    { "name": "Scored Fuel",
+      "code": "SF",
+      "type": "bool"
     },
-    { "name": "Fuel Scored",
-      "code": "afs",
-      "expectedMax": 32,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
-    { "name": "Pass from Neutral Zone",
-      "code": "apn",
-      "expectedMax": 60,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+    { "name": "Went to Middle",
+      "code": "WTM",
+      "type": "bool"
     },
     { "name": "Climb (L1)",
       "code": "ac",
       "type": "radio",
       "choices": {
-        "c": "Climbed<br>",
-        "a": "Attempted<br>",
-        "x": "Not Attempted"
+        "Climbed": "Climbed<br>",
+        "Attempted": "Attempted<br>",
+        "Not Attempted": "Not Attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "Not Attempted"
     },
     { "name": "Pickup from Depot",
       "code": "afd",
@@ -105,10 +90,6 @@ var config_data = `
     },
     { "name": "Pickup from Outpost",
       "code": "afo",
-      "type": "bool"
-    },
-    { "name": "Pickup from Neutral Zone",
-      "code": "aff",
       "type": "bool"
     }
   ],
