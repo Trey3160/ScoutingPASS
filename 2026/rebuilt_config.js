@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "dataFormat": "tsv",
+"dataFormat": "tsv",
   "title": "Scouting PASS 2026",
   "page_title": "REBUILT",
   "checkboxAs": "10",
@@ -13,12 +13,12 @@ var config_data = `
       "required": "true"
     },
     { "name": "Event",
-      "code": "e",
+    "code": "e",
       "type": "event",
-      "defaultValue": "{ "2026ilch",
-      "required": "true"
-      },
-    { "name": "Match Level",
+      "defaultValue": "2026ilch",
+        "required": "true"
+    },
+      { "name": "Match Level",
       "code": "l",
       "type": "level",
       "choices": {
@@ -182,7 +182,7 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized",
+{ "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
     },
@@ -199,7 +199,7 @@ var config_data = `
       "code": "def",
       "type": "bool"
     },
-    { "name": "Comments",
+  { "name": "Comments",
       "code": "co",
       "type": "text",
       "size": 15,
