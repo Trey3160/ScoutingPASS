@@ -98,9 +98,9 @@ var config_data = `
       "code": "oss",
       "type": "radio",
       "choices": {
-        "1": "Best Scorrer",
-        "2": "2nd Best Scorrer",
-        "3": "3rd Best Scorrer",
+        "1": "Best Scorrer<br>",
+        "2": "2nd Best Scorrer<br>",
+        "3": "3rd Best Scorrer<br>",
         "0": "Defense"
       },
       "defaultValue": "0"
@@ -109,8 +109,8 @@ var config_data = `
       "code": "dss",
       "type": "radio",
       "choices": {
-        "f": "Feeder",
-        "n": "Defense Nutural",
+        "f": "Feeder<br>",
+        "n": "Defense Nutural Zone<br>",
         "z": "Defense Alliance Zone"
       },
       "defaultValue": "f"
