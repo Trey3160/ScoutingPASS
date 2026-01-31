@@ -15,12 +15,16 @@ var config_data = `
       "required": true
     },
     {
-      "name": "Event",
-      "code": "e",
-      "type": "event",
-      "defaultValue": "2026ilch",
-      "required": true
-    },
+  "name": "Event",
+  "code": "e",
+  "type": "radio",
+  "choices": {
+    "2026okth": "Tulsa<br>",
+    "2026okok": "Oklahoma City"
+  },
+  "defaultValue": "2026okth",
+  "required": true
+},
     {
       "name": "Match Level",
       "code": "l",
