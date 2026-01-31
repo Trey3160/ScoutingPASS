@@ -12,16 +12,12 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "event",
+    { "name": "Event",
       "code": "e",
-      "type": "radio",
-      "choices": {
-        "2026OKOK": "Oklahoma City<br>",
-        "2026OKTU": "Tulsa<br>",
-      },
-      "defaultValue": "2026OKOK",
+      "type": "event",
+      "defaultValue": "2026okok",
       "required": "true"
-    },
+      },
     { "name": "Match Level",
       "code": "l",
       "type": "level",
