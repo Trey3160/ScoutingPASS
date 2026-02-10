@@ -66,14 +66,6 @@ var config_data = `
     }
   ],
   "auton": [
-    
-    { "name": "Pass from Neutral Zone",
-      "code": "apn",
-      "expectedMax": 60,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
     { "name": "Climb (L1)",
       "code": "ac",
       "type": "radio",
