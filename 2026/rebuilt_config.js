@@ -72,9 +72,9 @@ var config_data = `
       "choices": {
         "1": "Climbed<br>",
         "0.5": "Attempted<br>",
-        "0": "Not Attempted"
+        "x": "Not Attempted"
       },
-      "defaultValue": "0"
+      "defaultValue": "x"
     },
     {"name": "Scored in auto",
       "code": "sia",
@@ -131,9 +131,9 @@ var config_data = `
         "2": "Level 2<br>",
         "3": "Level 3<br>",
         "0.5": "Attempted<br>",
-        "0": "Not Attempted"
+        "x": "Not Attempted"
       },
-      "defaultValue": "0"
+      "defaultValue": "x"
     }
   ],
   "postmatch": [
