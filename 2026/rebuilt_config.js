@@ -130,10 +130,10 @@ var config_data = `
         "1": "Level 1<br>",
         "2": "Level 2<br>",
         "3": "Level 3<br>",
-        "a": "Attempted<br>",
-        "x": "Not Attempted"
+        "0.5": "Attempted<br>",
+        "0": "Not Attempted"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     }
   ],
   "postmatch": [
@@ -192,21 +192,6 @@ var config_data = `
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
-    },
-    { "name": "Was Defended",
-      "code": "def",
-      "type": "bool"
-    },
-    { "name": "Excessive Penalties",
-      "code": "pen",
-      "type": "bool"
-    },
-    { "name": "Fuel Percentage",
-      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
-      "code": "pct",
-      "type": "number",
-      "min": 0,
-      "max": 100
     },
     { "name": "Comments",
       "code": "co",
